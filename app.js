@@ -55,9 +55,12 @@ const showQuestion = () => {
                 })
             })
     } else {
-        
-    }
+       
+    quizBox.innerHTML = "<h1>Quiz Ended!</h1>";
+    nextBtn.style.display = "none";
 }
+    }
+
 showQuestion()
 
 nextBtn.addEventListener("click" , () => {
